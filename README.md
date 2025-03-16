@@ -1,12 +1,94 @@
-# React + Vite
+# GetCouponWebsite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a coupon management website built with React, Vite, Zustand, and Tailwind CSS. It allows users to claim coupons and administrators to manage coupons.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User authentication with login and logout functionality
+- Admin dashboard to add, edit, delete, and manage coupons
+- User interface to view and claim available coupons
+- Responsive design with Tailwind CSS
+- State management with Zustand
+- API integration with Axios
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+📦 Project Root
+├── 📄 .env
+├── 📄 .gitignore
+├── 📄 eslint.config.js
+├── 📄 index.html
+├── 📄 package.json
+├── 📄 postcss.config.js
+├── 📄 README.md
+├── 📄 tailwind.config.js
+├── 📄 vite.config.js
+│
+├── 📂 public
+│   └── 📄 vite.svg
+│
+├── 📂 src
+│   ├── 📄 App.css
+│   ├── 📄 App.jsx
+│   ├── 📄 index.css
+│   ├── 📄 main.jsx
+│   │
+│   ├── 📂 assets
+│   │   └── 📄 react.svg
+│   │
+│   ├── 📂 components
+│   │   ├── 📄 LoadingSpinner.jsx
+│   │   └── 📄 Navbar.jsx
+│   │
+│   ├── 📂 lib
+│   │   └── 📄 axios.js
+│   │
+│   ├── 📂 pages
+│   │   ├── 📄 DashBoard.jsx
+│   │   ├── 📄 HomePage.jsx
+│   │   └── 📄 LoginPage.jsx
+│   │
+│   ├── 📂 stores
+│   │   ├── 📄 couponStore.js
+│   │   └── 📄 useUserStore.js
+```
+
+## Getting Started
+
+### Installation
+
+1. Clone the repository:
+
+```sh
+git clone https://github.com/AgrimGupta195/GetCouponWebsite.git
+```
+
+2. Install Dependencies:
+
+```sh
+npm install
+```
+
+3. Create a `.env` file and add the following:
+
+```sh
+VITE_API_URL="URL"
+```
+
+4. Start the development server:
+
+```sh
+npm run dev
+```
+
+## Technologies Used
+
+- **React** - Frontend library
+- **Vite** - Fast build tool for React
+- **Tailwind CSS** - Styling framework
+- **Zustand** - State management
+- **Axios** - HTTP requests
+- **React Router** - Client-side routing
+
+
